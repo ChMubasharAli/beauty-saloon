@@ -10,6 +10,4 @@ export async function creatUser(formData: FormData) {
   const createdUser = await prisma.user.create({
     data: { email: email, name: name || "" },
   });
-
-  return { success: true, user: createdUser };
 }
