@@ -13,6 +13,7 @@ const adapter = new PrismaMariaDb({
   port: Number(process.env.DB_PORT),
   ssl: { rejectUnauthorized: true },
   connectTimeout: 30000,
+  socketTimeout: 30000,
 });
 
 export const prisma =
