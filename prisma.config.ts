@@ -1,9 +1,6 @@
 import { defineConfig } from "prisma/config";
 import { config } from "dotenv";
 
-// 1. Sab se pehle .env file ko load karein
-config({ path: ".env" });
-
 // 2. Variables ko read karein
 const dbUser = process.env.DB_USERNAME;
 const dbPass = process.env.DB_PASSWORD;
